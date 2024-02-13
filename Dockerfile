@@ -1,5 +1,5 @@
 FROM centos: latest
-MAINTAINER sanjay-dahiya332@gmail.com
+MAINTAINER itvishal30@gmail.com
 RUN yum install -y httpd \
 zip \
 unzip
@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip kindle.zip
 RUN cp -rvf markups-kindle/* •
 RUN rm -rf -MACOSX markups-kindle kindle.zip
-CMD ["/usr/sbin/httpd™, -D, FOREGROUND ]
+CMD ["/usr/sbin/httpd", -D, FOREGROUND ]
 EXPOSE 80
